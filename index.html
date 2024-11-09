@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Calculator</h1>
+    </header>
+
+    <main class="calculator">
+        <div class="display">
+            <input type="checkbox" id="toggle-mode">
+            <label for="toggle-mode">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-moon"></i>
+            </label>
+
+            <div class="display-text">
+                <h1></h1>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <div class="first line">
+                <button class="ac exclude">AC</button>
+                <button class="paren-left">(</button>
+                <button class="paren-right">)</button>
+                <button class="div op"><i class="fa-solid fa-divide"></i></button>
+            </div>
+            <div class="second line">
+                <button class="seven">7</button>
+                <button class="eight">8</button>
+                <button class="nine">9</i></button>
+                <button class="mul op"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="third line">
+                <button class="4">4</button>
+                <button class="5">5</button>
+                <button class="6">6</button>
+                <button class="sub op"><i class="fa-solid fa-minus"></i></button>
+            </div>
+            <div class="fourth line">
+                <button class="one">1</button>
+                <button class="two">2</button>
+                <button class="three">3</button>
+                <button class="add op"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="fifth line">
+                <button class="zero">0</button>
+                <button class="dot">.</button>
+                <button class="back"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="equals"><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Arush Nandakumar Menon</p>
+        <p><a href="https://github.com/your-github" target="_blank">View on GitHub</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
