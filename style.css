@@ -144,6 +144,10 @@ body.darkmode .display{
     text-align: right;
 }
 
+body.darkmode .display h1{
+    color: white;
+}
+
 ::-webkit-scrollbar {
     height: 8px;
     width: 10px;
