@@ -12,16 +12,19 @@ body {
     background-color: rgb(249, 234, 213);
     font-family: cursive;
     font-weight: 550;
-    
 }
 
 body.darkmode {
     background-color: black;
 }
 
+
 /* header */
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -29,30 +32,14 @@ body.darkmode {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+body.darkmode .header {
+    background-color: #121212;
+    color: white;
+}
+
 .header h1 {
+    margin-left: 30px;
     font-size: 1.5em;
-    color: #333;
-}
-
-/* calculator */
-
-.calculator {
-    height: 670px;
-    width: 350px;
-    margin: 65px auto;
-    background-color: white;
-}
-
-.display {
-    height: 170px;
-    width: 320px;
-    background-color: beige;
-    padding: 0 15px;
-    padding-top: 25px;
-    margin-bottom: 20px;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    text-align: center;
 }
 
 label {
@@ -61,6 +48,7 @@ label {
     border-radius: 50px;
     background-color: bisque;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 body.darkmode label i {
@@ -79,7 +67,7 @@ label i:first-child {
 label:after {
     content: "";
     height: 100%;
-    width: 30px;
+    width: 33px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -101,7 +89,7 @@ input:checked+label {
 
 input:checked+label:after {
     position: absolute;
-    left: 58px;
+    left: 62px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a);
 }
@@ -112,7 +100,28 @@ label:after {
 }
 
 label:active:after {
-    width: 35px;
+    width: 37px;
+}
+
+
+/* calculator */
+
+.calculator {
+    height: 650px;
+    width: 350px;
+    margin: 65px auto;
+    background-color: white;
+}
+
+.display {
+    height: 150px;
+    width: 320px;
+    background-color: beige;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    text-align: center;
 }
 
 .display h1 {
@@ -127,20 +136,21 @@ label:active:after {
     text-align: right;
 }
 
-.display h1::-webkit-scrollbar {
+::-webkit-scrollbar {
     height: 8px;
+    width: 10px;
 }
 
-.display h1::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-.display h1::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
-.display h1::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
@@ -197,12 +207,18 @@ button:active {
 }
 
 /* footer */
+
 .footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
     background-color: #f4f4f4;
     font-size: 0.9em;
+    color: #666;
+}
+
+body.darkmode .footer {
+    background-color: #121212;
     color: #666;
 }
 
