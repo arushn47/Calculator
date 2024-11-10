@@ -107,14 +107,14 @@ label:active:after {
 /* calculator */
 
 .calculator {
-    height: 650px;
+    height: 700px;
     width: 350px;
     margin: 65px auto;
     background-color: white;
 }
 
 .display {
-    height: 150px;
+    height: 30%;
     width: 100%;
     background-color: beige;
     padding: 10px 15px;
@@ -209,13 +209,14 @@ button:active {
 /* footer */
 
 .footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px 0;
     background-color: #f4f4f4;
     font-size: 14px;
     color: #666;
-    margin: 0;
 }
 
 body.darkmode .footer {
@@ -238,11 +239,13 @@ body.darkmode .footer {
         width: 100%;
         margin: 0;
     }
-    
+
     .line {
         gap: 20px;
     }
+}
 
+@media (max-width:350px) {
     .header h1 {
         margin-left: 15px;
     }
