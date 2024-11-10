@@ -113,6 +113,10 @@ label:active:after {
     background-color: white;
 }
 
+body.darkmode .calculator{
+    background-color: #1A120D;
+}
+
 .display {
     height: 30%;
     width: 100%;
@@ -122,6 +126,10 @@ label:active:after {
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     text-align: center;
+}
+
+body.darkmode .display{
+    background-color: #39281E;
 }
 
 .display h1 {
@@ -180,6 +188,11 @@ button {
     font-family: "Montserrat", sans-serif;
 }
 
+body.darkmode button{
+    background-color: #241913;
+    color: #D4C3B8;
+}
+
 button i {
     font-size: 21px;
 }
@@ -195,11 +208,29 @@ button:active {
 .paren-left,
 .paren-right,
 .equals {
-    background-color: bisque
+    background-color: bisque;
+}
+
+
+body.darkmode .add,
+body.darkmode .sub,
+body.darkmode .mul,
+body.darkmode .div,
+body.darkmode .paren-left,
+body.darkmode .paren-right {
+    background-color: #5B4130;
+}
+
+body.darkmode .equals {
+    background-color: #703700;
 }
 
 .ac {
     background-color: rgb(244, 244, 190);
+}
+
+body.darkmode .ac{
+    background-color: #474921;
 }
 
 .show {
