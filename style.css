@@ -20,10 +20,6 @@ body.darkmode {
     background-color: black;
 }
 
-.header, .calculator, .display, .footer {
-    max-width: 100%;
-}
-
 /* header */
 
 .header {
