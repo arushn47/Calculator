@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -12,12 +13,16 @@ body {
     background-color: rgb(249, 234, 213);
     font-family: cursive;
     font-weight: 550;
+    overflow: hidden;
 }
 
 body.darkmode {
     background-color: black;
 }
 
+.header, .calculator, .display, .footer {
+    max-width: 100%;
+}
 
 /* header */
 
@@ -103,7 +108,6 @@ label:active:after {
     width: 37px;
 }
 
-
 /* calculator */
 
 .calculator {
@@ -115,7 +119,7 @@ label:active:after {
 
 .display {
     height: 150px;
-    width: 320px;
+    width: 100%;
     background-color: beige;
     padding: 10px 15px;
     margin-bottom: 30px;
@@ -213,8 +217,9 @@ button:active {
     text-align: center;
     padding: 10px 0;
     background-color: #f4f4f4;
-    font-size: 0.9em;
+    font-size: 14px;
     color: #666;
+    margin: 0;
 }
 
 body.darkmode .footer {
@@ -234,12 +239,19 @@ body.darkmode .footer {
 
 @media (max-width:450px) {
     .calculator {
-        position: relative;
         width: 100%;
         margin: 0;
     }
-
+    
     .line {
         gap: 20px;
+    }
+
+    .header h1 {
+        margin-left: 15px;
+    }
+
+    label {
+        margin-right: 15px;
     }
 }
