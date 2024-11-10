@@ -13,7 +13,6 @@ body {
     background-color: rgb(249, 234, 213);
     font-family: cursive;
     font-weight: 550;
-    overflow: hidden;
 }
 
 body.darkmode {
