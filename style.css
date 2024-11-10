@@ -145,25 +145,7 @@ body.darkmode .display{
 }
 
 body.darkmode .display h1{
-    color: white;
-}
-
-::-webkit-scrollbar {
-    height: 8px;
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    color: #D4C3B8;
 }
 
 .btn-container {
@@ -267,6 +249,24 @@ body.darkmode .footer {
 
 .footer a:hover {
     color: #333;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 @media (max-width:450px) {
