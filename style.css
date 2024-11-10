@@ -231,3 +231,19 @@ body.darkmode .footer {
 .footer a:hover {
     color: #333;
 }
+
+@media (max-width:400px) {
+    .calculator {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .display {
+        width: 100%;
+    }
+
+    .line {
+        gap: 20px;
+    }
+}
